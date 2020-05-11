@@ -8,16 +8,15 @@ body {
 header::before {
     content: "";
     background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
-    position: absolute;
+    position: absolute;;
     height: 100%;
     width: 100%;
     opacity: 0.2;
     z-index: -1;
 
-
 }
 
-.container {
+.header {
     margin-top: 10px;
     display: flex;
 
@@ -64,4 +63,16 @@ header::before {
 
 p {
     text-align: center;
+}
+
+#button_div{
+    display: flex;
+    margin: auto;
+    /* toallign items in center  */
+    justify-content: center; 
+    padding: 10px 20px;
+}
+
+#button_div .btn {
+    margin: 10px 3px;
 }
