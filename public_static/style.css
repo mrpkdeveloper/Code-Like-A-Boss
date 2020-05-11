@@ -22,7 +22,7 @@ header::before {
 
 }
 
-.navbar {
+.navigationbar {
     display: flex;
     font-family: 'Bree Serif', serif;
 }
@@ -33,13 +33,13 @@ header::before {
 
 }
 
-.navbar li {
+.navigationbar li {
     list-style: none;
     padding: 12px;
     font-size: 20px;
 }
 
-.navbar li:hover {
+.navigationbar li:hover {
     background-color: grey;
 }
 
