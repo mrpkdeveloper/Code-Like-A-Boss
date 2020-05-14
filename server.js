@@ -10,5 +10,5 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 //on requesting /routes index.js runs
-app.use('/api', require('./routes').route)
+app.use('/', require('./routes/index'))
 app.listen(1111, () => console.log("server started at http://localhost:1111"))

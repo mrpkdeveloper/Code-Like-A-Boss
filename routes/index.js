@@ -6,6 +6,5 @@ route.use('/signup', require('./signup'))
 //on requesting for /login login.js loads
 route.use('/login', require('./login'))
 
-exports = module.exports = {
-    route
-}
+exports = module.exports = route
+
