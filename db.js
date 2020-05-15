@@ -1,10 +1,14 @@
 const sequelize = require('sequelize')
 const db = new sequelize('codedb', 'codder', 'codpass', {
     dialect: 'mysql',
-    host: 'localhost'
+    host: 'localhost',
+    pool: {
+        min: 0,
+        max: 5
+    }
 })
 
-const user = db.define('user', {
+const user = db.define('userinfo', {
     id: {
         type: sequelize.INTEGER,
         allowNull: false,
@@ -21,8 +25,7 @@ const user = db.define('user', {
     },
     username: {
         type: sequelize.STRING,
-        allowNull: false,
-        unique: true
+        allowNull: false
     },
     password: {
         type: sequelize.STRING,

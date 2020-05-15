@@ -18,6 +18,11 @@ route.get('/', (req, res) => {
 })
 
 route.post('/', (req, res) => {
+    console.log(req.body.firstname)
+    console.log(req.body.lastname)
+    console.log(req.body.username)
+    console.log(req.body.password)
+    console.log(req.body.address)
     user.create({
         firstname: req.body.firstname,
         lastname: req.body.lastname,
@@ -29,11 +34,8 @@ route.post('/', (req, res) => {
             res.status(201).send(user)
         })
         .catch((err) => {
-            res.status(501).send({
-                error: "could not able to add new user"
-            })
+            res.status(501).send({ error: "could not able to add new user" })
         })
-
 })
 
 exports = module.exports = route 
