@@ -14,5 +14,13 @@ function adduser(firstname, lastname, username, password, address, done) {
     }, function (data) {
         done(data)
     })
+}
 
+function retriveuser(username, password, done) {
+    $.post('/login', {
+        username: username,
+        password: password
+    }, function (data) {
+        done(data)
+    })
 }
