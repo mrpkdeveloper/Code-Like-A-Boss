@@ -18,11 +18,6 @@ route.get('/', (req, res) => {
 })
 
 route.post('/', (req, res) => {
-    console.log(req.body.firstname)
-    console.log(req.body.lastname)
-    console.log(req.body.username)
-    console.log(req.body.password)
-    console.log(req.body.address)
     user.create({
         firstname: req.body.firstname,
         lastname: req.body.lastname,
