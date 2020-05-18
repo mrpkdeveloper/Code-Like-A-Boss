@@ -7,7 +7,11 @@ $(function () {
     login_bttn.click(function () {
         retriveuser(username.val(), password.val(),
             function (user) {
-                window.alert(" Welcome " + user.firstname + " " + user.lastname + " to our site ")
+                if (user.firstname == undefined) {
+                    window.alert("enter correct username or password")
+                } else {
+                    window.alert(" Welcome " + user.firstname + " " + user.lastname + " to our site ")
+                }
             })
     })
 }
