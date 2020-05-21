@@ -1,21 +1,21 @@
 const user = require('../db').user
 const route = require('express').Router()
 
-route.get('/', (req, res) => {
-    //we want to send all users as an array from our databse
+// route.get('/', (req, res) => {
+//     //we want to send all users as an array from our databse
 
-    user.findAll()               //this will get all the data from user table and pass to then
-        .then((users) => {
-            res.status(200).send(users)
-        })
-        .catch((err) => {
-            res.status(500).send({
-                error: "could not retrieve user"
+//     user.findAll()               //this will get all the data from user table and pass to then
+//         .then((users) => {
+//             res.status(200).send(users)
+//         })
+//         .catch((err) => {
+//             res.status(500).send({
+//                 error: "could not retrieve user"
 
-            })
-        })
+//             })
+//         })
 
-})
+// })
 
 route.post('/', (req, res) => {
     user.create({
