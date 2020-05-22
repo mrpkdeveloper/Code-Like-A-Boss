@@ -8,7 +8,7 @@ const passport = require('./passport')
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-
+//these lines are used to handle passport stuff
 app.use(session({
     //this secret is used to encode cokkies
     secret: 'somesecretstring'
