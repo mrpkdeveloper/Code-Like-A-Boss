@@ -1,5 +1,11 @@
 const route = require('express').Router()
 const user = require('../db').user
+const path = require('path')
+
+route.get('/', (req, res) => {
+    // res.sendFile(__dirname + "/login.html")
+    res.sendFile('login.html', { root: path.join(__dirname, '../public_static') });
+})
 
 route.post('/', (req, res) => {
     user.findOne({
