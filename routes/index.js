@@ -6,6 +6,7 @@ route.use('/signup', require('./userinfo'))
 //on requesting for /login login.js loads
 route.use('/login', require('./login'))
 
+route.use('/private', require('./private'))
 
 exports = module.exports = route
 
