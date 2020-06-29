@@ -1,6 +1,6 @@
 const sequelize = require('sequelize')
 const db = new sequelize('codedb', 'codder', 'codpass', {
-    dialect: 'mysql',
+    dialect: 'postgres',
     host: 'localhost',
     pool: {
         min: 0,
