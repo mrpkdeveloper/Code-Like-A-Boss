@@ -1,5 +1,5 @@
 const sequelize = require('sequelize')
-const db = new sequelize('derk677teprv51', 'xpqcsqjnqgtylo', 'f7ec47a3f652d5ef09e99ac4466932bd5502384b7284b57287fe4207eacda0bd', {
+const db = new sequelize('codedb', 'postgres', 'pb10859#', {
     dialect: 'postgres',
     host: 'localhost',
 
