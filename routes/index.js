@@ -1,6 +1,6 @@
 const route = require('express').Router()
 
-//on requesting for /signup signup.js loads
+//on requesting for /signup userinfo.js loads
 route.use('/signup', require('./userinfo'))
 
 //on requesting for /login login.js loads
